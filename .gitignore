@@ -4,6 +4,9 @@
 # Archives
 *.zip
 
+# JSON data
+*.json
+
 # Data
 *.csv*
 
