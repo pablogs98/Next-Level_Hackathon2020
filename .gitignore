@@ -1,6 +1,9 @@
 # IDEs
 .vscode/
 
+# Archives
+*.zip
+
 # Data
 *.csv*
 
