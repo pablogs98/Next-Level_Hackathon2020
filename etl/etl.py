@@ -3,8 +3,8 @@ import json
 import cloudant
 import pandas as pd
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
+import hashlib
+from cloudant import Cloudant
 from datetime import datetime, timedelta
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from sklearn.model_selection import RandomizedSearchCV, train_test_split
@@ -47,12 +47,9 @@ def main(args):
         json_data.update(casos_acum_json)
         json_data.update(pred)
 
-        with open('{}.json'.format(ccaa), 'w') as jsond:
-            jsond.write(json.dumps(json_data,indent=4))
+        client = Cloudant.iam(account_name=args['cloudant_username'], api_key=args['cloudant_apikey'], connect=True)
+        covid_db = client['covid']
 
-
-args = {'url': 'https://cnecovid.isciii.es/covid19/resources/datos_ccaas.csv'}
-main(args)
-
-
-
+        partition = hashlib.md5(ccaa.encode('utf-8')).hexdigest()
+        json_data['_id'] = '{}:{}'.format(partition, ccaa)
+        covid_db.create_document(json_data)

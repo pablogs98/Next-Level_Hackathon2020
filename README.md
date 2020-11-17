@@ -9,3 +9,5 @@
 - [Dades covid cv](https://dadesobertes.gva.es/es/dataset/covid-19-total-acumulat-casos-confirmats-pcr-altes-persones-mortes-i-hospitalitzades-i-en-uci)
 - [Dades covid eusk](https://www.euskadi.eus/boletin-de-datos-sobre-la-evolucion-del-coronavirus/web01-a2korona/es/)
 - [Dades covid mad](http://datos.comunidad.madrid/catalogo/dataset/covid19_tia_zonas_basicas_salud/resource/b7b9edb4-0c70-47d3-9c64-8c4913830a24)
+
+- [Dades nacionals](https://datos.gob.es/es/catalogo/e05070101-evolucion-de-enfermedad-por-el-coronavirus-covid-19)
