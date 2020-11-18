@@ -1,0 +1,5 @@
+numpy
+pandas
+cloudant
+requests
+sklearn
