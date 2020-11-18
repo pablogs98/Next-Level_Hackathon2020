@@ -1,12 +1,12 @@
-var globalValue = "";
+var globalValue = {};
 
-function getValue() {
-    return globalValue;
+function get(key) {
+    return globalValue[key];
 }
 
-function setValue(value) {
-    globalValue = value;
+function set(key, value) {
+    globalValue[key] = value;
 }
 
-module.exports.getValue = getValue;
-module.exports.setValue = setValue;
+module.exports.getValue = get;
+module.exports.setValue = set;
