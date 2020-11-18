@@ -57,8 +57,8 @@
             <form class="needs-validation" novalidate="">
                 <div class="row">
                     <div class="col-md-12 mb-3">
-                        <label for="firstName">Age</label>
-                        <input type="number" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="" value="" required="">
                         <div class="invalid-feedback">
                             Age is required.
                         </div>
@@ -77,8 +77,8 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label for="state">Region</label>
-                        <select class="custom-select d-block w-100" id="state" required="">
+                        <label for="region">Region</label>
+                        <select class="custom-select d-block w-100" id="region" required="">
                             <option value="">Choose...</option>
                             <option>Andalucía</option>
                             <option>Aragón</option>
@@ -110,17 +110,17 @@
                 <div class="d-block my-3">
                     <label>Gender</label>
                     <div class="custom-control custom-radio">
-                        <input id="male" name="paymentMethod" type="radio" class="custom-control-input" checked=""
+                        <input id="male" name="gender" type="radio" class="custom-control-input" checked=""
                                required="" value="1">
                         <label class="custom-control-label" for="male">Male</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="female" name="paymentMethod" type="radio" class="custom-control-input" required=""
+                        <input id="female" name="gender" type="radio" class="custom-control-input" required=""
                         value="2">
                         <label class="custom-control-label" for="female">Female</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="other" name="paymentMethod" type="radio" class="custom-control-input" required=""
+                        <input id="other" name="gender" type="radio" class="custom-control-input" required=""
                         value="0">
                         <label class="custom-control-label" for="other">Other</label>
                     </div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Submit form</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="send()">Submit form</button>
             </form>
         </div>
     </div>
