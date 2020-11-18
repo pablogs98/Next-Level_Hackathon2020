@@ -10,9 +10,14 @@ client = Cloudant.iam(account_name=cloudant_credentials['username'], api_key=clo
 
 covid_db = client['covid']
 
-with open('CT.json', 'r') as covid_json:
-    ct = json.loads(covid_json.read())
+# with open('CT.json', 'r') as covid_json:
+#     ct = json.loads(covid_json.read())
 
-partition = hashlib.md5(b'CT').hexdigest()
-ct['_id'] = '{}:CT'.format(partition)
-covid_db.create_document(ct)
+ccaa = 'CT'
+partition = hashlib.md5(ccaa.encode('utf-8')).hexdigest()
+doc_id = '{}:{}'.format(partition, ccaa)
+# ct['_id'] = '{}:CT'.format(partition)
+# covid_db.create_document(ct)
+
+x = covid_db[doc_id]
+print(x)
