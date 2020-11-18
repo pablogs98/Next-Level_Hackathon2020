@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covid
+spec:
+  selector:
+    matchLabels:
+      app: covid
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: covid
+    spec:
+      containers:
+        - name: app
+          image: aitorarjona/nextlevel-hackaton-covid:0.1
+          ports:
+            - containerPort: 8080
