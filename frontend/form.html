@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Byzantine Generals - Aitor, Germán, Pablo">
-    <title>COVID-19 Form - 2020 Next Level Hackathon</title>
+    <title>Formulario COVID-19 - 2020 Next Level Hackathon</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -44,41 +44,38 @@
 <body class="bg-light">
 <div class="container">
     <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="bootstrap-solid.svg" alt="" width="72" height="72">
-        <h2>Covid-19 risk form</h2>
+        <img class="d-block mx-auto mb-4" src="covidpred_logo_black.png" alt="" height="72">
+        <h2>Formulario de riesgo de COVID-19</h2>
         <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
             has a validation state that can be triggered by attempting to submit the form without completing it.</p>
     </div>
 
     <div class="row">
         <div class="col-md-12 order-md-1">
-            <h4 class="mb-3">Basic information</h4>
+            <h4 class="mb-3">Información básica</h4>
             <form class="needs-validation" novalidate="">
                 <div class="row">
                     <div class="col-md-12 mb-3">
-                        <label for="age">Age</label>
+                        <label for="age">Edad</label>
                         <input type="number" class="form-control" id="age" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                            Age is required.
+                            La edad es un campo obligatorio.
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="country">Country</label>
-                        <select class="custom-select d-block w-100" id="country" required="" disabled="True">
-                            <option>Spain</option>
+                        <label for="country">País</label>
+                        <select class="custom-select d-block w-100" id="country" required="" disabled="">
+                            <option>España</option>
                         </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label for="region">Region</label>
+                        <label for="region">Comunidad autónoma</label>
                         <select class="custom-select d-block w-100" id="region" required="">
-                            <option value="">Choose...</option>
+                            <option value="">Escoger...</option>
                             <option>Andalucía</option>
                             <option>Aragón</option>
                             <option>Asturias</option>
@@ -107,41 +104,41 @@
                 </div>
 
                 <div class="d-block my-3">
-                    <label>Gender</label>
+                    <label>Género</label>
                     <div class="custom-control custom-radio">
                         <input id="male" name="gender" type="radio" class="custom-control-input" checked=""
                                required="" value="1">
-                        <label class="custom-control-label" for="male">Male</label>
+                        <label class="custom-control-label" for="male">Hombre</label>
                     </div>
                     <div class="custom-control custom-radio">
                         <input id="female" name="gender" type="radio" class="custom-control-input" required=""
                         value="2">
-                        <label class="custom-control-label" for="female">Female</label>
+                        <label class="custom-control-label" for="female">Mujer</label>
                     </div>
                     <div class="custom-control custom-radio">
                         <input id="other" name="gender" type="radio" class="custom-control-input" required=""
                         value="0">
-                        <label class="custom-control-label" for="other">Other</label>
+                        <label class="custom-control-label" for="other">Otro</label>
                     </div>
                 </div>
 
                 <hr class="mb-4">
 
-                <h4 class="mb-3">Pre-conditions</h4>
+                <h4 class="mb-3">Factores de riesgo</h4>
 
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="hypertension">
-                            <label class="custom-control-label" for="hypertension">Hypertension</label>
+                            <label class="custom-control-label" for="hypertension">Hipertensión</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="pneumonia">
-                            <label class="custom-control-label" for="pneumonia">Pneumonia</label>
+                            <label class="custom-control-label" for="pneumonia">Neumonía</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="asthma">
-                            <label class="custom-control-label" for="asthma">Asthma</label>
+                            <label class="custom-control-label" for="asthma">Asma</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="copd">
@@ -149,29 +146,29 @@
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="immunosuppression">
-                            <label class="custom-control-label" for="immunosuppression">Immunosuppression</label>
+                            <label class="custom-control-label" for="immunosuppression">Inmunodepresión</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="smoke">
-                            <label class="custom-control-label" for="smoke">Smoke</label>
+                            <label class="custom-control-label" for="smoke">Tabaco</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="pregnancy">
-                            <label class="custom-control-label" for="pregnancy">Pregnancy</label>
+                            <label class="custom-control-label" for="pregnancy">Embarazo</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="cardiovascular">
-                            <label class="custom-control-label" for="cardiovascular">Cardiovascular disease</label>
+                            <label class="custom-control-label" for="cardiovascular">Enfermedad ardiovascular</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="renal-chronic">
-                            <label class="custom-control-label" for="renal-chronic">Renal chronic disease </label>
+                            <label class="custom-control-label" for="renal-chronic">Enfermedad renal crónica</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="obesity">
-                            <label class="custom-control-label" for="obesity">Obesity</label>
+                            <label class="custom-control-label" for="obesity">Obesidad</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="diabetes">
@@ -179,16 +176,16 @@
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="other-disease">
-                            <label class="custom-control-label" for="other-disease">Other disease</label>
+                            <label class="custom-control-label" for="other-disease">Otra enfermedad</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="covid-contact">
-                            <label class="custom-control-label" for="covid-contact">Contact with Covid-19 cases</label>
+                            <label class="custom-control-label" for="covid-contact">Contacto con casos de COVID-19</label>
                         </div>
                     </div>
                 </div>
                 <hr class="mb-4">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit form</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar formulario</button>
             </form>
         </div>
     </div>
@@ -196,7 +193,7 @@
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">© 2020 Byzantine Generals - 2020 Next Level Hackathon</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Github</a></li>
+            <li class="list-inline-item"><a href="https://github.com/pablogs98/Next-Level_Hackathon2020">Github</a></li>
         </ul>
     </footer>
 </div>
