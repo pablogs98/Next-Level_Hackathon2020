@@ -1,6 +1,6 @@
 # Next Level Hackathon2020
 
-Demo: [nlh2020covid.hopto.org/](nlh2020covid.hopto.org/)
+Demo: [nlh2020covid.hopto.org/](http://nlh2020covid.hopto.org/)
 
 ## Descripción del proyecto: COVIDpred
 COVIDpred es un predictor personalizado del impacto de la COVID-19 en la nube. A partir de
