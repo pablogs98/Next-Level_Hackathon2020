@@ -11,6 +11,8 @@ app.set('view engine', 'mustache');
 app.engine('mustache', mustacheExpress());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static('public'));
+
 app.use('/', enterNameRoute);
 app.use('/', displayNameRoute);
 

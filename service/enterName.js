@@ -5,11 +5,7 @@ const death_api = "https://eu-gb.functions.appdomain.cloud/api/v1/web/pablo.gime
 
 let router = require('express').Router();
 let storage = require('./simpleStorage');
-const { json } = require('express');
 
-router.get('/', function (request, response) {
-    response.render('enterName', { pageTitle: "Enter Your Name" });
-});
 
 router.post('/submit', function (request, response) {
 
@@ -56,7 +52,7 @@ router.post('/submit', function (request, response) {
         }
         console.log(data)
         storage.setValue(id, data);
-        url = '/displayName?id=' + id;
+        url = '/displayResult?id=' + id;
         console.log(url);
         response.redirect(url);
     })
