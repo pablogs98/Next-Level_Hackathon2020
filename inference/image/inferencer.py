@@ -4,7 +4,7 @@ import ibm_boto3
 import ibm_botocore
 import pandas as pd
 import sys
-import gzip
+import zlib
 
 def main(args) :
 	msg="Null"
@@ -36,7 +36,7 @@ def main(args) :
 	# stream_icu = ibm_cos.Object(config['Bucket'], 'model_icu.pickle').get()['Body']
 	# model_icu = pickle.loads(stream_icu.read())
 	stream_models = ibm_cos.get_object(Bucket=config['Bucket'], Key='models.zip')['Body'].read()
-	models = pickle.loads(gzip.decompress(stream_models))
+	models = pickle.loads(zlib.decompress(stream_models))
 
 	model_death = models['model_death']
 	model_icu = models['model_icu']
