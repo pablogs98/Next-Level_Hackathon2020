@@ -1,4 +1,4 @@
-#!/bin/bash
+:#!/bin/bash
 
 ibmcloud fn action delete NLHackation2020/inferencer_icu
 ibmcloud fn action delete NLHackation2020/inferencer_death
