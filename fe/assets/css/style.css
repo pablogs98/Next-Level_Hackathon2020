@@ -1305,9 +1305,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# results
 --------------------------------------------------------------*/
-.pricing .box {
+.results .box {
   padding: 40px 20px;
   text-align: center;
   border-radius: 8px;
@@ -1317,7 +1317,7 @@ section {
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
 }
 
-.pricing .box h3 {
+.results .box h3 {
   font-weight: 400;
   padding: 15px;
   font-size: 18px;
@@ -1326,7 +1326,7 @@ section {
   color: #124265;
 }
 
-.pricing .box h4 {
+.results .box h4 {
   font-size: 42px;
   color: #2487ce;
   font-weight: 500;
@@ -1334,19 +1334,19 @@ section {
   margin-bottom: 20px;
 }
 
-.pricing .box h4 sup {
+.results .box h4 sup {
   font-size: 20px;
   top: -15px;
   left: -3px;
 }
 
-.pricing .box h4 span {
+.results .box h4 span {
   color: #bababa;
   font-size: 16px;
   font-weight: 300;
 }
 
-.pricing .box ul {
+.results .box ul {
   padding: 0;
   list-style: none;
   color: #124265;
@@ -1355,21 +1355,21 @@ section {
   font-size: 14px;
 }
 
-.pricing .box ul li {
+.results .box ul li {
   padding-bottom: 16px;
 }
 
-.pricing .box ul .na {
+.results .box ul .na {
   color: #ccc;
   text-decoration: line-through;
 }
 
-.pricing .box .btn-wrap {
+.results .box .btn-wrap {
   padding: 15px;
   text-align: center;
 }
 
-.pricing .box .btn-buy {
+.results .box .btn-buy {
   display: inline-block;
   padding: 10px 40px;
   border-radius: 4px;
@@ -1383,30 +1383,30 @@ section {
   border: 2px solid #2487ce;
 }
 
-.pricing .box .btn-buy:hover {
+.results .box .btn-buy:hover {
   background: #2487ce;
   color: #fff;
 }
 
-.pricing .featured {
+.results .featured {
   background: #2487ce;
 }
 
-.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+.results .featured h3, .results .featured h4, .results .featured h4 span, .results .featured ul, .results .featured ul .na {
   color: #fff;
 }
 
-.pricing .featured .btn-wrap {
+.results .featured .btn-wrap {
   padding: 15px;
   text-align: center;
 }
 
-.pricing .featured .btn-buy {
+.results .featured .btn-buy {
   color: #fff;
   border: 2px solid #fff;
 }
 
-.pricing .featured .btn-buy:hover {
+.results .featured .btn-buy:hover {
   background: #fff;
   color: #2487ce;
 }
