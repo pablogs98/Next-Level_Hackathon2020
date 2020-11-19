@@ -21,8 +21,8 @@ def main(args) :
 	print(ibm_boto3.__version__)
 
 	config = {
-		'ibm_api_key_id' : 'HqjZ-aY5oQfrkI0cwNTMRMVTTRDv6JY-i6tCswcpiGvq',
-		'ibm_service_instance_id' : '584a3f8b-4540-4c26-a6ac-cc319cc06c9e',
+		'ibm_api_key_id' : 'XXXXXXXXX',
+		'ibm_service_instance_id' : 'XXXXXXXXXXXXX',
 		'endpoint_url' : 'https://s3.private.eu.cloud-object-storage.appdomain.cloud',
 		'Bucket' : 'nextlevelhackathon2020-donotdelete-pr-s9nsxj5fxjzk0j'
 	}
