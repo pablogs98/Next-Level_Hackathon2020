@@ -18,7 +18,7 @@ IBM Cloud Functions, IBM Cloud Object Storage, Cloudant e IBM Watson.
 ![Arquitectura de COVIDpred](docs/architecture_diagram.png)
 
 ## Equipo
-Somos Byzatian Generals, un equipo de la Universitat Rovira i Virgili (Tarragona), becarios
+Somos Byzantine Generals, un equipo de la Universitat Rovira i Virgili (Tarragona), becarios
 con contrato de investigación en el grupo CloudLab.
 * Aitor Arjona aitor.arjona@urv.cat
 * Pablo Gimeno pablo.gimeno@urv.cat
