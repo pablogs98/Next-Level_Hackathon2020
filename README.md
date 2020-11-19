@@ -14,6 +14,7 @@ Nuestro sistema está construido completamente sobre IBM Cloud, desacoplando los
 de almacenamiento y procesamiento ML del servidor mediante funciones serverless. Sigue un
 diseño modular, basado en una interfaz HTTP sobre un servidor alojado en Kubernetes, 
 IBM Cloud Functions, IBM Cloud Object Storage, Cloudant e IBM Watson.
+
 ![Arquitectura de COVIDpred](docs/architecture_diagram.png)
 
 ## Equipo
