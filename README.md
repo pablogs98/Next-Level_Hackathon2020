@@ -1,4 +1,4 @@
-# Next Level Hackathon2020
+# Next Level Hackathon 2020
 
 Demo: [nlh2020covid.hopto.org/](http://nlh2020covid.hopto.org/)
 
